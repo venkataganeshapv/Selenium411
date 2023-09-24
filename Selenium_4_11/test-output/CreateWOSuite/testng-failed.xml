@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite parallel="tests" name="Failed suite [CreateWOSuite]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" parallel="tests" name="CreateWOTest_Chrome(failed)">
+    <parameter name="browser" value="chrome"/>
+    <parameter name="url" value="https://mz5st213.appsdev1.fusionappsdphx1.oraclevcn.com:4443/OA_HTML/AppsLogin"/>
+    <classes>
+      <class name="com.ebs.test.drivertest.Seleniumt11TestNgTest">
+        <methods>
+          <include name="beforesetup"/>
+          <include name="setup"/>
+          <include name="tearTest"/>
+          <include name="login"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- com.ebs.test.drivertest.Seleniumt11TestNgTest -->
+    </classes>
+  </test> <!-- CreateWOTest_Chrome(failed) -->
+</suite> <!-- Failed suite [CreateWOSuite] -->
