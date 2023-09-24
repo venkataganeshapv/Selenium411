@@ -1,0 +1,31 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="CreateWOSuite"  parallel = "tests" thread-count = "5">
+      
+	<test name="CreateWOTest_Firefox" enabled="true">
+		<parameter name="browser" value="firefox" />
+		<parameter name="url" value="https://mz5st213.appsdev1.fusionappsdphx1.oraclevcn.com:4443/OA_HTML/AppsLogin" />
+        <classes> 
+            <class name="com.ebs.test.drivertest.Seleniumt11TestNgTest">
+            	<methods>
+                	<include name="login"/>
+                	
+            	</methods> 
+            </class>                
+        </classes>
+	</test>
+	
+	<test name="CreateWOTest_Chrome" enabled="true">
+		<parameter name="browser" value="chrome" />
+		<parameter name="url" value="https://mz5st213.appsdev1.fusionappsdphx1.oraclevcn.com:4443/OA_HTML/AppsLogin" />
+        <classes> 
+            <class name="com.ebs.test.drivertest.Seleniumt11TestNgTest">
+            	<methods>
+                	<include name="login"/>
+                	
+            	</methods> 
+            </class>                
+        </classes>
+	</test>
+	
+	
+</suite>
